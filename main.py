@@ -15,7 +15,7 @@ from other import user_email_id,user_pwd,account_sid,auth_token,from_phone,nums
 
 client=Client(account_sid,auth_token)
 
-def OTP_generator():                 #this is faster but IS GIVING AN ERROR SO IGNORE FOR NOW
+def OTP_generator():                 #Generates 4 digit OTP
     OTP=random.randrange(1000,10000)
     return OTP
 
