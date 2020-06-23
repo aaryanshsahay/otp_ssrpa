@@ -16,16 +16,8 @@ from other import user_email_id,user_pwd,account_sid,auth_token,from_phone,nums
 client=Client(account_sid,auth_token)
 
 def OTP_generator():                 #this is faster but IS GIVING AN ERROR SO IGNORE FOR NOW
-    digits = "123456789"             #i will work on this for now , ignore this one
-    OTP = ""                       
-
-    for i in range(4):
-        OTP += digits[math.floor(random.random() * 10)]
+    OTP=random.randrange(1000,10000)
     return OTP
-
-def OTPgenerator():                 #selects a random number from a list(nums) in other.py file
-    otp=random.choice(nums)         #this method will be used only for testing purposes.
-    return otp
 
 def OTP_email():
     email_input=input("Enter Email ID:")
